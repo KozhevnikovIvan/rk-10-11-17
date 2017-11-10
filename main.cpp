@@ -14,12 +14,11 @@ int main() {
     cin >> m[k];
   }
   for (k = 0; k < n; k++) {
+    cout << m[k] << " ";
     if (n != k) {
       cout << "An error has occurred while reading inprut data ";
       return 0;
     }
-
-    cout << m[k] << " ";
   }
   return 0;
 }
