@@ -13,12 +13,12 @@ int main() {
   for (k = 0; k < n; k++) {
     cin >> m[k];
   }
+  for (k = 0; k < n / 2; k++) {
+    swap(m[k], m[n - k - 1]);
+  }
   for (k = 0; k < n; k++) {
     cout << m[k] << " ";
-    if (n != k) {
-      cout << "An error has occurred while reading inprut data ";
-      return 0;
-    }
   }
+
   return 0;
 }
