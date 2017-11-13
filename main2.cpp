@@ -6,14 +6,22 @@ int main() {
   int k, n, z;
   cin >> n;
   if (n <= 0) {
-    cout << "An error has occurred while reading inprut data ";
-    return 0;
+    cout << "An error has occurred while reading input data ";
+    return 1;
   }
-  int m[n];
+  int*m = new int[n];
   for (k = 0; k < n; k++) {
     cin >> m[k];
   }
   cin >> z;
+  if (z <= 0) {
+    cout << "An error has occurred while reading input data ";
+    return 2;
+  }
+  if (z > n) {
+    cout << "An error has occurred while reading input data ";
+    return 3;
+  }
   int x[z - 1], y[n - z - 1];
   for (k = 0; k < z; k++) {
     x[k] = m[k];
