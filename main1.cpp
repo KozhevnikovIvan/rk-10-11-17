@@ -20,5 +20,5 @@ int main() {
     cout << m[k] << " ";
   }
 
-  return 0;
+  delete [] m;
 }
