@@ -35,5 +35,5 @@ int main() {
   for (k = 0; k < z; k++) {
     cout << x[k] << " ";
   }
-  return 0;
+  delete [] m;
 }
