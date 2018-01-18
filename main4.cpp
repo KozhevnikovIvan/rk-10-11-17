@@ -8,8 +8,8 @@ int main() {
   char str1[256], str2[256];
   int n = 0, m = 0, element = 1, endi = 0;
   bool fl1 = true, fl2 = false, fl3 = true, fl4 = true, fl5 = true;
-  cout « "Vvedite razmer matritsy" « endl;
-  cin » str1 » str2;
+  cout << "Введите размер матрицы:" << endl;
+  cin >> str1 >> str2;
   for (int i = 0; i < strlen(str1); i++) {
     if ((str1[i] >= '0') && (str1[i] <= '9'))
       ;
@@ -28,7 +28,7 @@ int main() {
     n = atoi(str1);
     m = atoi(str2);
   } else
-    cout « "An error has occurred while reading input data" « endl;
+    cout << "Произошла ошибка при чтении входных данных!" << endl;
 
   int a[n][m], j = 0;
   for (int i = 0; i < n; i++) {
@@ -58,8 +58,8 @@ int main() {
 
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < m; j++) {
-      cout « a[i][j] « " ";
+      cout << a[i][j] << " ";
     }
-    cout « endl;
+    cout << endl;
   }
 }
